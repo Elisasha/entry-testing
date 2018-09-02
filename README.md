@@ -1,3 +1,3 @@
-# entry-testing
+# Our tasks for entry testing
 
-repo with the tasks that could be used as entry tests for the students
+Each task has to have its own folder
