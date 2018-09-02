@@ -1,3 +1,4 @@
-# Our tasks for entry testing
+# Available tasks
 
-Each task has to have its own folder
+- broken-page: nice mosaic was totally broken, please fix it
+
