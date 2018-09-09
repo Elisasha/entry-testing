@@ -20,7 +20,7 @@ Fibonacci has called. Seems he can’t recall his numbers, except for the first 
 
 Could you create .js file, that Fibonacci can copypaste in his browser console and get any Nth number by inputing the N into it.
 
-##How to pass
+## How to pass
 Make a fork from this repository, complete tasks and add your contact info for next communication.
 
 And one more thing: be brave and creative :)
