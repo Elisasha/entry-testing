@@ -49,15 +49,15 @@
             box-shadow: inset 0 0 0 1px palegreen;
         }
 
-        .field__cell--top {
+        .field__cell--up {
             box-shadow: 0 -4px 0 0 black, inset 0 0 0 1px palegreen;
         }
 
-        .field__cell--top-right {
+        .field__cell--up-right {
             box-shadow: 0 -4px 0 0 black, 4px 0 0 0 black, inset 0 0 0 1px palegreen;
         }
 
-        .field__cell--top-left {
+        .field__cell--up-left {
             box-shadow: 0 -4px 0 0 black, -4px 0 0 black, inset 0 0 0 1px palegreen;
         }
 
@@ -65,15 +65,15 @@
             box-shadow: 4px 0 0 0 black, inset 0 0 0 1px palegreen;
         }
 
-        .field__cell--bottom {
+        .field__cell--down {
             box-shadow: 0 4px 0 0 black, inset 0 0 0 1px palegreen;
         }
 
-        .field__cell--bottom-right {
+        .field__cell--down-right {
             box-shadow: 0 4px 0 0 black, 4px 0 0 0 black, inset 0 0 0 1px palegreen;
         }
 
-        .field__cell--bottom-left {
+        .field__cell--down-left {
             box-shadow: 0 4px 0 0 black, -4px 0 0 black, inset 0 0 0 1px palegreen;
         }
 
@@ -97,76 +97,80 @@
             height: 50px;
         }
 
-        .piece:after {
+        .piece:before, .piece:after {
+            content: "";
             display: block;
             position: absolute;
-            content: "";
-            background-color: darkorange;
-            border-radius: 7px;
             top: 50%;
             left: 50%;
-            margin-top: -15px;
             margin-left: -15px;
+        }
+
+        .piece:after {
+            background-color: darkorange;
+            border-radius: 7px;
+            z-index: 1;
             width: 30px;
             height: 30px;
+            box-shadow: 0 0 0 3px darkorange;
+            margin-top: -15px;
+        }
+
+        .piece:before {
+            background-color: transparent;
+            z-index: 2;
+            border: solid 15px transparent;
+            width: 0;
+            height: 0;
+            border-bottom: solid 15px white;
+            margin-top: -25px;
         }
 
     </style>
 </head>
 <body>
 <div class="field">
-    <div class="piece" style="top: 0; left: 0;"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top-right"></div>
+    <div class="piece" style="top: 0; left: 0; display: none;"></div>
+    <div class="field__cell field__cell--up-left"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up-right"></div>
 
-    <div class="field__cell field__cell--top-left"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top-right"></div>
-    <div class="field__cell field__cell--right"></div>
-
-    <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--top-left"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top-right"></div>
-    <div class="field__cell field__cell--right"></div>
+    <div class="field__cell field__cell--up-left"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up-right"></div>
     <div class="field__cell field__cell--right"></div>
 
     <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--top-left"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top-right"></div>
-    <div class="field__cell field__cell--right"></div>
+    <div class="field__cell field__cell--up-left"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up-right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
 
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--top-left"></div>
-    <div class="field__cell field__cell--top"></div>
-    <div class="field__cell field__cell--top-right"></div>
-    <div class="field__cell field__cell--right"></div>
+    <div class="field__cell field__cell--up-left"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up-right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
@@ -174,9 +178,9 @@
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--top-left"></div>
-    <div class="field__cell field__cell--bottom-right"></div>
+    <div class="field__cell field__cell--up-left"></div>
+    <div class="field__cell field__cell--up"></div>
+    <div class="field__cell field__cell--up-right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
@@ -186,9 +190,20 @@
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--bottom-left"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom-right"></div>
+    <div class="field__cell field__cell--up-left"></div>
+    <div class="field__cell field__cell--down-right"></div>
+    <div class="field__cell field__cell--right"></div>
+    <div class="field__cell field__cell--right"></div>
+    <div class="field__cell field__cell--right"></div>
+    <div class="field__cell field__cell--right"></div>
+
+    <div class="field__cell field__cell--left"></div>
+    <div class="field__cell field__cell--left"></div>
+    <div class="field__cell field__cell--left"></div>
+    <div class="field__cell field__cell--left"></div>
+    <div class="field__cell field__cell--down-left"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down-right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
@@ -196,35 +211,35 @@
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--bottom-left"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom-right"></div>
+    <div class="field__cell field__cell--down-left"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down-right"></div>
     <div class="field__cell field__cell--right"></div>
     <div class="field__cell field__cell--right"></div>
 
     <div class="field__cell field__cell--left"></div>
     <div class="field__cell field__cell--left"></div>
-    <div class="field__cell field__cell--bottom-left"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom-right"></div>
+    <div class="field__cell field__cell--down-left"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down-right"></div>
     <div class="field__cell field__cell--right"></div>
 
     <div class="field__cell field__cell--left field__cell--target"></div>
-    <div class="field__cell field__cell--bottom-left"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom"></div>
-    <div class="field__cell field__cell--bottom-right"></div>
+    <div class="field__cell field__cell--down-left"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down"></div>
+    <div class="field__cell field__cell--down-right"></div>
 </div>
 
 <div class="controls">
@@ -235,7 +250,6 @@
 </div>
 
 <script>
-    const defaultPiecePosition = 'top: 0; left: 0;';
     const successResult = 'success!';
     const failResult = 'fail!';
     const successModifier = 'result--success';
@@ -244,6 +258,8 @@
     const fieldElement = document.querySelector('.field');
     const cellsElements = document.querySelectorAll('.field__cell');
     const pieceElement = document.querySelector('.piece');
+    const directionNames = ['up', 'right', 'down', 'left'];
+    let stepper;
 
     class Field {
         constructor() {
@@ -257,11 +273,7 @@
             }
         }
 
-        wallThere(direction, classes) {
-            return classes.indexOf(direction) !== -1;
-        }
-
-        inTheSameRow(current, next) {
+        onTheSameRow(current, next) {
             return (current - current % 10) / 10 === (next - next % 10) / 10
         }
 
@@ -278,7 +290,7 @@
 
                 case 'right':
                     nextIndex = currentIndex + 1;
-                    if (!this.inTheSameRow(currentIndex, nextIndex)) {
+                    if (!this.onTheSameRow(currentIndex, nextIndex)) {
                         nextIndex = -1;
                     }
                     break;
@@ -292,7 +304,7 @@
 
                 case 'left':
                     nextIndex = currentIndex - 1;
-                    if (!this.inTheSameRow(currentIndex, nextIndex)) {
+                    if (!this.onTheSameRow(currentIndex, nextIndex)) {
                         nextIndex = -1;
                     }
                     break;
@@ -305,134 +317,152 @@
             return this.cells[nextIndex];
         }
 
-        checkCell(currentTop, currentLeft, direction) {
-            let cellIndex = (currentTop / 50 * 10 + currentLeft / 50);
+        isTheWallThere(position, direction) {
+            let cellIndex = position.top * 10 + position.left;
             let cell = this.cells[cellIndex];
             let nextCell = this.findNextCell(cellIndex, direction);
 
-            return !(
-                this.wallThere(direction, cell.classList.toString()) ||
-                typeof nextCell === 'undefined' ||
-                this.wallThere(this.opposites[direction], nextCell.classList.toString())
+            return (
+                (cell.classList.toString().indexOf(direction) !== -1) ||
+                (typeof nextCell === 'undefined') ||
+                (nextCell.classList.toString().indexOf(this.opposites[direction]) !== -1)
             );
         }
     }
 
-    class Piece {
-        constructor() {
-            this.piece = pieceElement;
-            this.steps = [];
-            this.finished = false;
-            this.timeout = 400;
-            this.field = new Field();
-        }
+    function createPiece () {
 
-        addStep(direction) {
-            this.steps.push({direction})
-        }
+        let field = new Field();
 
-        makeNext(step, endAfterIt) {
-            let top = Number(this.piece.style.top.replace('px', ''));
-            let left = Number(this.piece.style.left.replace('px', ''));
-            let nextLeft = left;
-            let nextTop = top;
+        let rotatePiece = direction => {
+            let dir = direction;
+            moves.unshift(function () {
+                pieceElement.style.transform = 'rotate(' + dir * 90 + 'deg)';
+            })
+        };
 
-            switch (step.direction) {
-                case 'left':
-                    break;
+        let movePiece = position => {
+            let top = (position.top) * 50;
+            let left = (position.left) * 50;
 
-                case 'down':
-                    nextTop += 50;
-                    break;
+            moves.unshift(function () {
+                pieceElement.style.top = top + 'px';
+                pieceElement.style.left = left + 'px';
+            })
+        };
 
-                case 'up':
-                    break;
+        let isPieceOut = () => {
+            return pieceElement.style.top === '450px' && pieceElement.style.left === '0px';
+        };
 
-                case 'right':
-                    nextLeft += 50;
-                    break;
+        let direction = Math.floor(Math.random() * directionNames.length);
+        let stepsCount = 0;
+        let turnsCount = 0;
+        let moves = [];
+        let position = {
+            left: Math.floor(Math.random() * 10),
+            top: Math.floor(Math.random() * 10)
+        };
 
-                default:
-                    return;
+        let piecePublicApi = {
+            isThereWay() {
+                const isTheWallThere = field.isTheWallThere(position, directionNames[direction]);
+                return !isTheWallThere
+            },
+
+            turnLeft() {
+                turnsCount += 1;
+                direction -= 1;
+                direction = direction < 0 ? 3 : direction;
+                rotatePiece(direction);
+            },
+
+            turnRight() {
+                turnsCount += 1;
+                direction += 1;
+                direction = direction > 3 ? 0 : direction;
+                rotatePiece(direction);
+            },
+
+            goForward() {
+                stepsCount += 1;
+                if (!this.isThereWay()) {
+                    return false;
+                }
+
+                switch (direction) {
+                    case 0:
+                        position.top -= 1;
+                        break;
+                    case 1:
+                        position.left += 1;
+                        break;
+                    case 2:
+                        position.top += 1;
+                        break;
+                    case 3:
+                        position.left -= 1;
+                        break;
+                    default:
+                        return false
+                }
+
+                movePiece(position);
             }
+        };
 
-            if (this.finished) {
+        stepper = setInterval(() => {
+
+            if (isPieceOut()) {
+                piecePublicApi.amIFree();
                 return;
             }
 
-            if (this.field.checkCell(top, left, step.direction)) {
+            let nextMove = moves.pop();
 
-                this.piece.setAttribute('style', 'top: ' + nextTop + 'px; left: ' + nextLeft + 'px;');
-
-                if (nextTop === 450 && nextLeft === 0) {
-                    this.finished = true;
-                }
-
-                if (this.finished) {
-                    this.end(true);
-                }
-            }
-
-            if (!this.finished && endAfterIt) {
-                this.end(false);
-            }
-        }
-
-        end(success) {
-            if (success) {
-                result.textContent = successResult;
-                result.classList.add(successModifier);
+            if (typeof nextMove === 'function') {
+                nextMove();
             } else {
-                result.textContent = failResult;
-                result.classList.remove(successModifier);
-            }
-        }
+                let success = isPieceOut();
 
-        go() {
-            this.steps.forEach((step, index) => {
-                setTimeout(() => {
-                    const endAfterIt = index === this.steps.length - 1;
-                    this.makeNext(step, endAfterIt);
-                }, (index + 1) * this.timeout);
-            });
-        }
+                if (success) {
+                    result.textContent = successResult;
+                    result.classList.add(successModifier);
+                } else {
+                    result.textContent = failResult;
+                    result.classList.remove(successModifier);
+                }
+
+                clearInterval(stepper);
+                console.log({stepsCount, turnsCount});
+            }
+        }, 200);
+
+        pieceElement.style.top = position.top * 50 + 'px';
+        pieceElement.style.left = position.left * 50 + 'px';
+        pieceElement.style.transform = 'rotate(' + direction * 90 + 'deg)';
+        pieceElement.style.display = 'block';
+
+        return piecePublicApi;
     }
 
-
-    function reset() {
-        pieceElement.setAttribute('style', defaultPiecePosition);
+    function resetField() {
+        clearInterval(stepper);
         result.textContent = '';
         result.classList.remove(successModifier);
     }
 
-    function run() {
-        let piece = new Piece();
-
-        plan(piece);
-        piece.go();
-    }
-
-    function plan(piece) {
-        piece.addStep('left');
-        piece.addStep('up');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('right');
-        piece.addStep('down');
-        piece.addStep('down');
-        piece.addStep('down');
-        piece.addStep('down');
+    function escapePlan() {
+        const piece = createPiece();
+        // piece.isThereWay();
+        // piece.goForward();
+        // piece.turnRight();
+        // piece.turnLeft();
     }
 
     function main() {
-        reset();
-        run();
+        resetField();
+        escapePlan();
     }
 
     start.addEventListener('click', main);
