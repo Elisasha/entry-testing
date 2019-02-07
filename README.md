@@ -1,8 +1,11 @@
-# Available tasks
+# Задания
 Hi, here are the testing round tasks for Frontend School at T-Systems.
 
-## 1 Broken page
-This nice mosaic is totally broken, please fix it.
+## 1 Page from JPEG
+We've lost sources of our main page, only one last screenshot was left.
+
+Please help us compose this web-page again.
+Please provide responive design for desctop and mobile and fell free use tips from tips.txt
 
 ## 2 Maze
 Help the orange square get out of the frightening maze.
@@ -10,18 +13,19 @@ Help the orange square get out of the frightening maze.
 Unfortunately, the orange square doesn't know how to move up and left.
 You have to teach it how to do that.
 
-## 3 Page from JPEG
-We've lost sources of our main page, only one last screenshot was left.
+Keep in mind that the orage square appears everytime in a new place.
 
-Please help us compose this web-page again.
+## 3 Algorithm in JS
+Create .js file with class or classes to implement graph objects. See requiremnts details in graph_requirements.md
 
-## 4 Algorithm in JS
-Fibonacci has called. Seems he can’t recall his numbers, except for the first two: 1, 1.
-
-Please create .js file, which Fibonacci could copypaste in his browser console and get any Nth number by inputing the N into it.
 
 ## How to pass
-Fork from this repository, complete the tasks and add your contact info for further communication.
+Don't fork from this repository!
+
+1. Create your own repository on Github or Gitlab
+2. Copy task files there and complete the tasks
+3. Add your contact info in this file below for further communication
+4. Send us the link to the repository
 
 One more thing: be brave and creative :)
 We are waiting for you to join our team!
