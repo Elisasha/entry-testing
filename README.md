@@ -1,4 +1,4 @@
-# Задания
+# Available tasks
 Hi, here are the testing round tasks for Frontend School at T-Systems.
 
 ## 1 Page from JPEG
