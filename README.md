@@ -5,7 +5,7 @@ Hi, here are the testing round tasks for Frontend School at T-Systems.
 We've lost sources of our main page, only several screenshots were left.
 
 Please help us compose this web-page again.
-Please provide responive design for desktop and mobile and feel free to use tips from tips.txt
+Please provide responive design for **desktop** and **mobile** and feel free to use tips from tips.txt
 
 ## 2 Maze
 Help the orange square get out of the frightening maze.
@@ -25,7 +25,7 @@ Don't fork from this repository!
 1. Create your own repository on Github or Gitlab
 2. Copy task files there and complete the tasks
 3. Add your contact info in this file below for further communication
-4. Send us the link to the repository
+4. Send back the link to the repository.
 
 One more thing: be brave and creative :)
 We are waiting for you to join our team!
